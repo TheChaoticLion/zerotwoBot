@@ -1,16 +1,16 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-const TOKEN = 'NDUxOTA5MjU0NDYzNDg4MDAx.DfQgfw.CPdL8T8wvMbalXIuZCE0J4RiAWA';
+const token = 'BOT_TOKEN';
 const PREFIX = '?';
 bot.on('ready', () => {
     console.log('Ready')
 
 bot.user.setStatus('Online')
 
-bot.user.setGame('with My Darling~<3| ?help ')
+bot.user.setGame('with My Darling~<3 ')
 
-bot.user.setGame('with My Darling~ <3| ?help ', 'https://www.twitch.tv/thechaoticlion');
+bot.user.setGame('with My Darling~ <3 | ?help', 'https://www.twitch.tv/thechaoticlion');
 
 });
 
@@ -93,10 +93,9 @@ bot.on('message', function(message) {
         case "remove":
             message.channel.sendMessage("okay!")
             break;
-        default:
-            message.channel.sendMessage("Invalid command");
     }
 });
+
 
 bot.on('message', function(message) {
     if (message.author.equals(bot.user)) return;
@@ -114,4 +113,5 @@ bot.on('message', function(message) {
 });
 
 
-bot.login(TOKEN);
+bot.login(token);
+
