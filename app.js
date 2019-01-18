@@ -10,7 +10,7 @@ bot.user.setStatus('Online')
 
 bot.user.setGame('with My Darling~<3 ')
 
-bot.user.setGame('with My Darling~ <3 | ?help', 'https://www.twitch.tv/thechaoticlion');
+bot.user.setGame('with My Darling~ <3 | ?help', 'https://www.twitch.tv/darkestdino');
 
 });
 
